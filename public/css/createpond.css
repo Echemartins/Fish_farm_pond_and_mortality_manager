@@ -1,0 +1,93 @@
+/* body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  } */
+
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+  /* CSS for Create Pond Form - Green Theme */
+
+/* Basic styling for the body */
+
+  
+  /* Container for the form */
+  .form-container {
+    width: 80%;
+    padding: 25px;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.2); /* Soft green shadow */
+    border: 1px solid #a5d6a7; /* Light green border */
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    color: #2e7d32; /* Darker green */
+    margin-bottom: 20px;
+  }
+  
+  /* Styling each form group */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    color: #2e7d32; /* Darker green */
+    margin-bottom: 5px;
+  }
+  
+  /* Input and textarea styles */
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a5d6a7; /* Light green border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #f1f8e9; /* Very light green */
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #66bb6a; /* Brighter green border on focus */
+  }
+  
+  /* Textarea resize control */
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  /* Submit button styling */
+  .form-group button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #66bb6a; /* Main green color */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-group button:hover {
+    background-color: #43a047; /* Darker green on hover */
+  }
+  
+  /* Optional additional spacing/margin adjustments */
+  .form-group:last-child {
+    margin-bottom: 0;
+  }
+  

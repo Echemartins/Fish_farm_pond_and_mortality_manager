@@ -1,0 +1,151 @@
+/* Basic styling for the body */
+/* body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  } */
+  
+  /* Button to open the modal */
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .update-mortality{
+    position: relative;
+    background-color: #a5d6a7;
+    padding: 15px;
+    border-radius: 15px;
+    line-height: 2;
+  }
+
+  
+  /* #updateMortalityForm{
+    background-color: #a5d6a7;
+    z-index: 2;
+  } */
+  /* Modal background (hidden by default) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    /* background-color: #ffffff; */
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  /* Modal content box */
+  .modal-content {
+    /* align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    text-align: center; */
+    /* position: relative; */
+  }
+
+  .modal-content input{
+    /* padding: 10px 30px;
+    width: 70%;
+    display: flex;
+    text-align: center; */
+
+
+  }
+  
+  /* Close button styling */
+  .close-button {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+
+  /* General styling for the page */
+  
+  /* Container for the update mortality form */
+  .modalo {
+    /* display: none;
+    width: 90%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.2);
+    border: 1px solid #a5d6a7; Light green border */
+  }
+  
+  .update-mortality-container h2 {
+    color: #2e7d32; /* Darker green */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for form groups */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    color: #2e7d32; /* Darker green */
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a5d6a7;
+    border-radius: 5px;
+    background-color: #f1f8e9; /* Very light green background */
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #66bb6a; /* Brighter green border on focus */
+  }
+  
+  /* Textarea resize control */
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  /* Submit button styling */
+  .form-group button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #66bb6a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-group button:hover {
+    background-color: #43a047; /* Darker green on hover */
+  }
+  

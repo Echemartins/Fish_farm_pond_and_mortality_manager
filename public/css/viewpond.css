@@ -1,0 +1,107 @@
+/* General styling */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9; 
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+  } */
+
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Container for pond details */
+  .pond-container {
+    width: 75%;
+    /* max-width: 600px; */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.2);
+    border: 1px solid #a5d6a7;
+  }
+
+  .mortality-records{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Header styling */
+  .pond-container h2,
+  .pond-container h3 {
+    color: #2e7d32; /* Darker green */
+    margin-top: 0;
+  }
+
+  .pond-details{
+    line-height: 2;
+  }
+
+  /* .mortality-button{
+    position: absolute;
+    top: 27rem;
+    left: 74rem;
+  } */
+  
+  /* Pond details text */
+  .pond-details p {
+    color: #333;
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  .delete{
+    display: flex;justify-content: end;
+  }
+
+  .delete-btn{
+    margin-top: 10px;
+    margin-left: auto;
+    background-color: red;
+  }
+  
+  /* Mortality table styling */
+  .mortality-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #f1f8e9; /* Very light green for rows */
+  }
+  
+  .mortality-table th,
+  .mortality-table td {
+    border: 1px solid #a5d6a7;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .mortality-table th {
+    background-color: #66bb6a; /* Main green for headers */
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .mortality-table tr:nth-child(even) {
+    background-color: #e8f5e9; /* Alternating light green */
+  }
+  
+  .mortality-table td {
+    color: #2e7d32; /* Dark green text */
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 600px) {
+    .pond-container {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .mortality-table th,
+    .mortality-table td {
+      padding: 8px;
+    }
+  }
+  
