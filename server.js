@@ -3,8 +3,9 @@ const mongoose = require("mongoose")
 const port = 5000
 const express = require("express")
 const app = express()
-const uri = 'mongodb+srv://echemartins47:password1234@cluster0.jlopo.mongodb.net/pond-manager?retryWrites=true&w=majority&appName=Cluster0'
-const DBURL='mongodb+srv://promise:promise123@real.jme6j.mongodb.net/lmtechub?retryWrites=true&w=majority'
+// const uri = 'mongodb+srv://echemartins47:password1234@cluster0.jlopo.mongodb.net/pond-manager?retryWrites=true&w=majority'
+// const uri = 'mongodb+srv://eche:eche123@cluster0.jlopo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const uri='mongodb+srv://promise:promise123@real.jme6j.mongodb.net/pond-manager?retryWrites=true&w=majority'
 const ejs = require('ejs')
 const methodOveride = require('method-override')
 const pondController = require("./controllers/pondController");
@@ -33,8 +34,12 @@ app.post("/createPond", pondController.createPond);
 
 
 app.listen(port,()=>{
-console.log(`app is running in port ${port}`)})
-mongoose.connect(DBURL)
-.then(()=> console.log('connected to database'))
-.catch((err)=>{console.log('error connecting to database', err)}) 
+console.log(`app is running on port ${port}`)})
+
+mongoose.connect(uri)
+    .then(() => console.log('Connected to MongoDB Atlas'))
+    .catch(err => console.error('MongoDB connection error:', err));
+// mongoose.connect(uri)
+// .then(()=> console.log('connected to database'))
+// .catch((err)=>{console.log('error connecting to database', err)}) 
 

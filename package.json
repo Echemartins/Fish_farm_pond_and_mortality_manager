@@ -4,11 +4,9 @@
     "eslint": "^9.15.0",
     "express": "^4.21.1",
     "method-override": "^3.0.0",
-    "mongoose": "^8.8.2",
+    "mongodb": "^6.11.0",
+    "mongoose": "^8.8.4",
     "telnet": "^0.0.1"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.4.14"
   },
   "scripts": {
     "start": "node server.js",
