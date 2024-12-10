@@ -29,7 +29,7 @@
         <main>
             <div class="ponds">
                 <%allPonds.forEach(function(pond){%>
-                <div class="pond">
+                <div onclick="window.location.href='/ponds/<%= pond._id %>'" class="pond">
                     <a href="/ponds/<%= pond._id %>" class="pond-name line1"
                         ><%=pond.pondName%></a
                     >

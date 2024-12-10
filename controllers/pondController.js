@@ -31,7 +31,7 @@ const pondController = {
                 additionalInformation,
             });
             await newPond.save();
-            res.render("createpond");
+            res.redirect("/");
             // res.status(200).json({message:"registration Succesful", data: newPond});
         } catch (error) {
             console.log(error);
