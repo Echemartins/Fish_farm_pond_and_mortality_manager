@@ -8,7 +8,7 @@ function openModal() {
   modal.style.display = "flex";
   modal.style.flexDirection = "column";
   modal.style.gap = "20px";
-  console.log('modal button clicked');
+  // console.log('modal button clicked');
   // const openModalButtons = document.querySelectorAll("#openModal");
   // openModalButtons.forEach(btn=>{
   //     btn.onclick = function() {

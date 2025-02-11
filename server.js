@@ -5,7 +5,8 @@ const express = require("express")
 const app = express()
 // const uri = 'mongodb+srv://echemartins47:password1234@cluster0.jlopo.mongodb.net/pond-manager?retryWrites=true&w=majority'
 // const uri = 'mongodb+srv://eche:eche123@cluster0.jlopo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
-const uri='mongodb+srv://promise:promise123@real.jme6j.mongodb.net/pond-manager?retryWrites=true&w=majority'
+// const uri='mongodb+srv://promise:promise123@real.jme6j.mongodb.net/pond-manager?retryWrites=true&w=majority'
+const uri = 'mongodb+srv://echemartins47:password1234@myapps.jlopo.mongodb.net/pondManager?retryWrites=true&w=majority&appName=myapps'
 const ejs = require('ejs')
 const methodOveride = require('method-override')
 const pondController = require("./controllers/pondController");
